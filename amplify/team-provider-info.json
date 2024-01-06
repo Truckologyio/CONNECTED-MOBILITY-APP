@@ -1,0 +1,15 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-connectedmobilityapp-staging-01231-authRole",
+      "UnauthRoleArn": "arn:aws:iam::390876183253:role/amplify-connectedmobilityapp-staging-01231-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::390876183253:role/amplify-connectedmobilityapp-staging-01231-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-connectedmobilityapp-staging-01231-deployment",
+      "UnauthRoleName": "amplify-connectedmobilityapp-staging-01231-unauthRole",
+      "StackName": "amplify-connectedmobilityapp-staging-01231",
+      "StackId": "arn:aws:cloudformation:us-east-1:390876183253:stack/amplify-connectedmobilityapp-staging-01231/cb6bf410-a515-11ee-8744-12f8de21cd65",
+      "AmplifyAppId": "d2cd6p90cej4ms"
+    }
+  }
+}
