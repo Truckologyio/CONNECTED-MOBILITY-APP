@@ -1,0 +1,6 @@
+{
+  "AppSyncApiName": "ConnectedMobilityApp",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthModeLastUpdated": "2023-12-28T00:58:45.255Z"
+}

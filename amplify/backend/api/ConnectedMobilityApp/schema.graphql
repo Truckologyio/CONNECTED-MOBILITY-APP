@@ -1,0 +1,39 @@
+type CryptoWallet @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Wallet_ID: String
+  User_ID: String
+  Balance: Int
+}
+
+type TokenReward @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Reward_ID: String
+  User_ID: String
+  Date_Earned: String
+  Mileage_Covered: Float
+  Token_Amount: Int
+}
+
+type MileageLog @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Log_ID: String
+  User_ID: String
+  Date: AWSDateTime
+  Start_Location: String
+  End_Location: String
+  Distance_Traveled: Float
+}
+
+type User @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  User_ID: String!
+  Username: String!
+  Email: String!
+  Password: String!
+  License_Number: String!
+  CDL_Endorsement: String!
+  Issued_State: String!
+  Issue_Date: String!
+  Exp_Date: String!
+}
+ 

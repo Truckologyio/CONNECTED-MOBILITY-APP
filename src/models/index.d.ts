@@ -119,14 +119,14 @@ type EagerUser = {
   };
   readonly id: string;
   readonly User_ID: string;
-  readonly Username?: string | null;
-  readonly Email?: string | null;
-  readonly Password?: string | null;
-  readonly License_Number?: string | null;
-  readonly CDL_Endorsement?: string | null;
-  readonly Issued_State?: string | null;
-  readonly Issue_Date?: string | null;
-  readonly Exp_Date?: string | null;
+  readonly Username: string;
+  readonly Email: string;
+  readonly Password: string;
+  readonly License_Number: string;
+  readonly CDL_Endorsement: string;
+  readonly Issued_State: string;
+  readonly Issue_Date: string;
+  readonly Exp_Date: string;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
@@ -138,14 +138,14 @@ type LazyUser = {
   };
   readonly id: string;
   readonly User_ID: string;
-  readonly Username?: string | null;
-  readonly Email?: string | null;
-  readonly Password?: string | null;
-  readonly License_Number?: string | null;
-  readonly CDL_Endorsement?: string | null;
-  readonly Issued_State?: string | null;
-  readonly Issue_Date?: string | null;
-  readonly Exp_Date?: string | null;
+  readonly Username: string;
+  readonly Email: string;
+  readonly Password: string;
+  readonly License_Number: string;
+  readonly CDL_Endorsement: string;
+  readonly Issued_State: string;
+  readonly Issue_Date: string;
+  readonly Exp_Date: string;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }

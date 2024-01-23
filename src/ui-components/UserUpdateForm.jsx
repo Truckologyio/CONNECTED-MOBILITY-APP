@@ -77,14 +77,14 @@ export default function UserUpdateForm(props) {
   React.useEffect(resetStateValues, [userRecord]);
   const validations = {
     User_ID: [{ type: "Required" }],
-    Username: [],
-    Email: [],
-    Password: [],
-    License_Number: [],
-    CDL_Endorsement: [],
-    Issued_State: [],
-    Issue_Date: [],
-    Exp_Date: [],
+    Username: [{ type: "Required" }],
+    Email: [{ type: "Required" }],
+    Password: [{ type: "Required" }],
+    License_Number: [{ type: "Required" }],
+    CDL_Endorsement: [{ type: "Required" }],
+    Issued_State: [{ type: "Required" }],
+    Issue_Date: [{ type: "Required" }],
+    Exp_Date: [{ type: "Required" }],
   };
   const runValidationTasks = async (
     fieldName,
@@ -201,7 +201,7 @@ export default function UserUpdateForm(props) {
       ></TextField>
       <TextField
         label="Username"
-        isRequired={false}
+        isRequired={true}
         isReadOnly={false}
         value={Username}
         onChange={(e) => {
@@ -233,7 +233,7 @@ export default function UserUpdateForm(props) {
       ></TextField>
       <TextField
         label="Email"
-        isRequired={false}
+        isRequired={true}
         isReadOnly={false}
         value={Email}
         onChange={(e) => {
@@ -265,7 +265,7 @@ export default function UserUpdateForm(props) {
       ></TextField>
       <TextField
         label="Password"
-        isRequired={false}
+        isRequired={true}
         isReadOnly={false}
         value={Password}
         onChange={(e) => {
@@ -297,7 +297,7 @@ export default function UserUpdateForm(props) {
       ></TextField>
       <TextField
         label="License number"
-        isRequired={false}
+        isRequired={true}
         isReadOnly={false}
         value={License_Number}
         onChange={(e) => {
@@ -329,7 +329,7 @@ export default function UserUpdateForm(props) {
       ></TextField>
       <TextField
         label="Cdl endorsement"
-        isRequired={false}
+        isRequired={true}
         isReadOnly={false}
         value={CDL_Endorsement}
         onChange={(e) => {
@@ -361,7 +361,7 @@ export default function UserUpdateForm(props) {
       ></TextField>
       <TextField
         label="Issued state"
-        isRequired={false}
+        isRequired={true}
         isReadOnly={false}
         value={Issued_State}
         onChange={(e) => {
@@ -393,7 +393,7 @@ export default function UserUpdateForm(props) {
       ></TextField>
       <TextField
         label="Issue date"
-        isRequired={false}
+        isRequired={true}
         isReadOnly={false}
         value={Issue_Date}
         onChange={(e) => {
@@ -425,7 +425,7 @@ export default function UserUpdateForm(props) {
       ></TextField>
       <TextField
         label="Exp date"
-        isRequired={false}
+        isRequired={true}
         isReadOnly={false}
         value={Exp_Date}
         onChange={(e) => {
